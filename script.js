@@ -37,7 +37,10 @@ function genererObstacle() {
     $("#" + nb).css({'bottom': getNumber()});
   }
   // alert(getNumber());
-  $("#" + nb).animate({right:'450px'}, 5000, 'linear');
+  $("#" + nb).animate({right:'+=450px'}, 5000, 'linear', function(){
+    console.log("ok");
+    $("#" + (nb-2)).remove();
+  });
 }
 
 // document.addEventListener("keydown",saut, false); // keydown = quand on enfonce une touche ET PAS flèche bas
