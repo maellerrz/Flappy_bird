@@ -1,0 +1,28 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #900C3F;
+  height: 570px;
+  overflow: hidden;
+}
+section{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://image.ibb.co/fCAd2R/background.png");
+  background-size: cover;
+  width: 350px;
+  height: 95%;
+  position: relative;
+}
+#bird{
+  width: 15%;
+  position: static;
+}
+.tuyau{
+  position: absolute;
+  right: -100px;
+  /* top: -40%; */
+}
