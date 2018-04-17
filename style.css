@@ -16,13 +16,29 @@ section{
   width: 350px;
   height: 95%;
   position: relative;
+  text-align: center;
 }
 #bird{
   width: 15%;
   position: static;
+  transition: 0s;
 }
 .tuyau{
   position: absolute;
   right: -100px;
   /* top: -40%; */
 }
+#gameOver{
+  position: absolute;
+  margin-top: -30%;
+  font-family: 'Verdana';
+  font-size: 40px;
+  font-weight: bold;
+  color: #BF0000;
+  width: 500px;
+}
+/* .rect{
+  background-color: black;
+  width: 50px;
+  height:
+} */
