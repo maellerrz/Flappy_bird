@@ -3,7 +3,8 @@ body{
   justify-content: center;
   align-items: center;
   background-color: #900C3F;
-  height: 570px;
+  /* border: 3px solid red; */
+  height: 96vh;
   overflow: hidden;
 }
 section{
@@ -14,9 +15,14 @@ section{
   background-image: url("https://image.ibb.co/fCAd2R/background.png");
   background-size: cover;
   width: 350px;
-  height: 95%;
+  height: 550px;
   position: relative;
   text-align: center;
+}
+#logo{
+  position: absolute;
+  margin-top: -40%;
+  width: 300px;
 }
 #bird{
   width: 15%;
@@ -36,9 +42,41 @@ section{
   font-weight: bold;
   color: #BF0000;
   width: 500px;
+  text-shadow: #FFF 1px 1px, #FFF -1px 1px, #FFF -1px -1px, #FFF 1px -1px;
 }
-/* .rect{
-  background-color: black;
-  width: 50px;
-  height:
+.buttons{
+  position: absolute;
+  font-size: 30px;
+  padding: 10px;
+  background-color: #FF9A00;
+  color: white;
+  border: 3px solid #FFF55C;
+  border-radius: 10px;
+}
+.buttons:hover{
+  background-color: #FFF783;
+  color: #FF8B00;
+  border: 3px solid #FF9A00;
+}
+#fst_playButton{
+  width: 100px;
+  margin-top: 60%;
+}
+#scd_playButton{
+  z-index: 1000;
+  margin-top: 10%;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  section {
+    width: calc(100vh * 0.62);
+    height: 100vh;
+  }
+}
+/* @media (max-width: 768px) {
+  section {
+    width: calc(100vh * 0.62);
+    height: 100vh;
+  }
 } */
